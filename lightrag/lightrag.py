@@ -146,7 +146,7 @@ class LightRAG:
     vector_storage: str = field(default="NanoVectorDBStorage")
     """Storage backend for vector embeddings."""
 
-    graph_storage: str = field(default="NetworkXStorage")
+    graph_storage: str = field(default="FalkorDBStorage")
     """Storage backend for knowledge graphs."""
 
     doc_status_storage: str = field(default="JsonDocStatusStorage")

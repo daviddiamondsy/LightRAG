@@ -15,6 +15,7 @@ STORAGE_IMPLEMENTATIONS = {
             "PGGraphStorage",
             "MongoGraphStorage",
             "MemgraphStorage",
+            "FalkorDBStorage",
         ],
         "required_methods": ["upsert_node", "upsert_edge"],
     },
@@ -59,6 +60,7 @@ STORAGE_ENV_REQUIREMENTS: dict[str, list[str]] = {
         "MONGO_DATABASE",
     ],
     "MemgraphStorage": ["MEMGRAPH_URI"],
+    "FalkorDBStorage": ["FALKORDB_HOST"],
     "AGEStorage": [
         "AGE_POSTGRES_DB",
         "AGE_POSTGRES_USER",
@@ -116,6 +118,7 @@ STORAGES = {
     "FaissVectorDBStorage": ".kg.faiss_impl",
     "QdrantVectorDBStorage": ".kg.qdrant_impl",
     "MemgraphStorage": ".kg.memgraph_impl",
+    "FalkorDBStorage": ".kg.falkordb_impl",
 }
 
 

@@ -38,3 +38,10 @@ vchordrq_epsilon = 1.9
 
 [memgraph]
 uri = bolt://localhost:7687
+
+[falkordb]
+host = localhost
+port = 6379
+# username =
+# password =
+max_connections = 16
